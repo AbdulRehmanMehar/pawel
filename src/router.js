@@ -16,5 +16,17 @@ export default new VueRouter({
             name: 'login',
             component: () => import('./components/Login.vue')
         },
+        {
+            path: '/auth',
+            name: 'auth',
+            component: () => import('./Authenticated.vue'),
+            children: [
+                {
+                    path: 'employee-create-ticket',
+                    name: 'employee-create-ticket',
+                    component: () => import('./components/employee/CreateTicket.vue')
+                }
+            ]
+        }
     ]
 })
