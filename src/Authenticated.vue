@@ -42,6 +42,7 @@ export default {
     overflow: hidden !important;
     background-color: #2176D4;
     position: relative;
+    font-family: Titillium Web;
 }
 
 .wrapper .sidebar {
@@ -54,7 +55,7 @@ export default {
 }
 
 .wrapper .sidebar .content {
-    margin: 70px 0;
+    margin: 20px 0;
     height: calc(100% - 280px);
     overflow-y: auto;
     overflow-x: hidden;
@@ -80,7 +81,7 @@ export default {
     position: relative;
 }
 
-.wrapper .sidebar .content a:not(.active), .wrapper .sidebar .content a:not(.router-link-exact-active) {
+.wrapper .sidebar .content :not(.active):not(.router-link-exact-active) {
     padding-top: 20px;
 }
 
@@ -111,5 +112,8 @@ export default {
     left: 190px ;
     border-radius: 35px;
     z-index: 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 50px 90px;
 }
 </style>
