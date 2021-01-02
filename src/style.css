@@ -8,3 +8,7 @@ html, body {
     font-family: 'Titillium Web', sans-serif;
     overflow-y: auto !important;
 }
+
+* {
+    font-family: 'Titillium Web', sans-serif !important;
+}
