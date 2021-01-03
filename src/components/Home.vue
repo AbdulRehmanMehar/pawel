@@ -13,6 +13,9 @@
             <li>
                 <router-link :to="{name: 'employee-create-ticket'}">Create Ticket</router-link>
             </li>
+            <li>
+                <router-link :to="{name: 'employee-ticket-details'}">Ticket Details</router-link>
+            </li>
         </ul>
     </div>
 </template>
