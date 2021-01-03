@@ -21,10 +21,17 @@ export default new VueRouter({
             name: 'auth',
             component: () => import('./Authenticated.vue'),
             children: [
+                // Employee Routes.....
+
                 {
                     path: 'employee-create-ticket',
                     name: 'employee-create-ticket',
                     component: () => import('./components/employee/CreateTicket.vue')
+                },
+                {
+                    path: 'employee-ticket-details',
+                    name: 'employee-ticket-details',
+                    component: () => import('./components/employee/TicketDetails.vue')
                 }
             ]
         }
