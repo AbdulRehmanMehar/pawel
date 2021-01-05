@@ -22,6 +22,9 @@
             <li>
                 <router-link :to="{name: 'investigator-dashboard'}">Dashboard</router-link>
             </li>
+            <li>
+                <router-link :to="{name: 'investigator-ticket-details'}">Ticket Details</router-link>
+            </li>
         </ul>
     </div>
 </template>
