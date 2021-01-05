@@ -6,8 +6,14 @@
 
             <div class="content">
                 
-                <div class="links">
+                <div class="links" v-if="currentUserType == 'employee'">
                     <router-link :to="{name: 'employee-create-ticket'}">Create Ticket</router-link>
+                    <router-link :to="{name: 'employee-help'}">Help</router-link>
+                </div>
+
+                <div class="links" v-if="currentUserType == 'investigator'">
+                    <router-link :to="{name: 'investigator-dashboard'}">Dashboard</router-link>
+                    <router-link :to="{name: 'investigator-profile'}">Profile</router-link>
                     <router-link :to="{name: 'employee-help'}">Help</router-link>
                 </div>
 
@@ -16,18 +22,55 @@
 
 
         <div class="inner">
-            <router-view></router-view>
+            <div class="inner-content">
+                <div class="top-bar">
+                    <ul class="bar-content">
+                        <li>
+                            <img :src="SettingsIcon" alt="">
+                        </li>
+                        <li>
+                            <img :src="ZvonceIcon" alt="">
+                            <div class="badge custom-badge has-text-weight-semibold">
+                                1
+                            </div>
+                        </li>
+                        <li class="ml-5">
+                            <img :src="UserImage" alt="">
+                            
+                        </li>
+                        <li class="max-width has-text-grey-lighter">
+                            <p>Nathan Miles</p>
+                        </li>
+                    </ul>
+                    
+                    
+                </div>
+                <router-view></router-view>
+            </div>
         </div>
     </div>
 </template>
 
 <script>
 import Logo from './assets/logo/whistle-logo-white.png'
+import SettingsIcon from './assets/icons/settings.png'
+import ZvonceIcon from './assets/icons/zvonce.png'
+import UserImage from './assets/helpers/user.png'
+
 export default {
     name: 'Authenticated',
     data() {
         return {
-            Logo: Logo
+            Logo: Logo,
+            SettingsIcon: SettingsIcon,
+            ZvonceIcon: ZvonceIcon,
+            UserImage: UserImage
+        }
+    },
+
+    computed: {
+        currentUserType() {
+            return this.$route.path.split('/').pop().split('-')[0].toLowerCase()
         }
     }
 }
@@ -115,5 +158,60 @@ export default {
     overflow-x: hidden;
     overflow-y: auto;
     padding: 50px 90px;
+}
+
+.inner-content {
+    position: relative;
+}
+
+.inner-content .top-bar {
+    position: absolute;
+    top: -45px; /** the padding (50px)... */
+    text-align: right;
+    width: 100%;
+}
+
+.top-bar .bar-content {
+    height: 36px;
+}
+
+.top-bar .bar-content li {
+    min-height: 36px;
+    max-height: 100%;
+    display: inline-block;
+    position:relative;
+    min-width: 25px;
+    max-width: 120px;
+}
+
+.top-bar .bar-content li img {
+    width: 25px;
+}
+
+.top-bar .bar-content li.max-width {
+    width: 100px;
+}
+
+.top-bar .bar-content li .badge.custom-badge {
+    position: absolute;
+    top: -1px;
+    right: 1px;
+    background: #34B54E;
+    height: 12px;
+    width: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 8px;
+    color: #FFFFFF;
+}
+
+.top-bar .bar-content li p {
+    position: absolute;
+    top: 13px;
+    left: 5px;
+    font-size: .8em;
 }
 </style>
