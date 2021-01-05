@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="is-size-3 has-text-weight-bold mb-6">Create Ticket</h1>
+        <h1 class="is-size-4 has-text-weight-bold mb-6">Create Ticket</h1>
 
         <div class="columns custom-columns-with-padding mb-5">
             <div class="column">

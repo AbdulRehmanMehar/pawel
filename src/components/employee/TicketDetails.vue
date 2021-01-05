@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <h1 class="is-size-3 has-text-weight-bold mb-6">Ticket Details</h1>
+        <h1 class="is-size-4 has-text-weight-bold mb-6">Ticket Details</h1>
 
         <div class="columns mb-5">
             <div class="column">
