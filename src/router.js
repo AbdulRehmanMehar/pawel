@@ -40,6 +40,11 @@ export default new VueRouter({
                     name: 'investigator-dashboard',
                     component: () => import('./components/investigator/Dashboard.vue')
                 },
+                {
+                    path: 'investigator-ticket-details',
+                    name: 'investigator-ticket-details',
+                    component: () => import('./components/investigator/TicketDetails.vue')
+                },
             ]
         }
     ]
