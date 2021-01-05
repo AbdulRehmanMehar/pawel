@@ -16,6 +16,12 @@
             <li>
                 <router-link :to="{name: 'employee-ticket-details'}">Ticket Details</router-link>
             </li>
+            <li>
+                <b>Investigator Routes</b>
+            </li>
+            <li>
+                <router-link :to="{name: 'investigator-dashboard'}">Dashboard</router-link>
+            </li>
         </ul>
     </div>
 </template>
