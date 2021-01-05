@@ -32,7 +32,14 @@ export default new VueRouter({
                     path: 'employee-ticket-details',
                     name: 'employee-ticket-details',
                     component: () => import('./components/employee/TicketDetails.vue')
-                }
+                },
+
+                // Investigator Routes.....
+                {
+                    path: 'investigator-dashboard',
+                    name: 'investigator-dashboard',
+                    component: () => import('./components/investigator/Dashboard.vue')
+                },
             ]
         }
     ]
