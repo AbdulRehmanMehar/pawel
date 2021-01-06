@@ -58,7 +58,7 @@
 
 <script>
 export default {
-    name: 'Dashboard'
+    name: 'Archive'
 }
 </script>
 
