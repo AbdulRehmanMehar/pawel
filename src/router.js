@@ -50,6 +50,13 @@ export default new VueRouter({
                     name: 'investigator-edit-profile',
                     component: () => import('./components/investigator/EditProfile.vue')
                 },
+
+                // Admin Routes.....
+                {
+                    path: 'admin-dashboard',
+                    name: 'admin-dashboard',
+                    component: () => import('./components/admin/Dashboard.vue')
+                },
             ]
         }
     ]
