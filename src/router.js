@@ -67,6 +67,11 @@ export default new VueRouter({
                     name: 'admin-archive',
                     component: () => import('./components/admin/Archive.vue')
                 },
+                {
+                    path: 'admin-investigators',
+                    name: 'admin-investigators',
+                    component: () => import('./components/admin/Investigators.vue')
+                },
             ]
         }
     ]
