@@ -45,6 +45,11 @@ export default new VueRouter({
                     name: 'investigator-ticket-details',
                     component: () => import('./components/investigator/TicketDetails.vue')
                 },
+                {
+                    path: 'investigator-edit-profile',
+                    name: 'investigator-edit-profile',
+                    component: () => import('./components/investigator/EditProfile.vue')
+                },
             ]
         }
     ]
