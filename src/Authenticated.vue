@@ -8,15 +8,24 @@
                 
                 <div class="links" v-if="currentUserType == 'employee'">
                     <router-link :to="{name: 'employee-create-ticket'}">Create Ticket</router-link>
-                    <router-link :to="{name: 'employee-help'}">Help</router-link>
+                    <router-link :to="{name: 'help'}">Help</router-link>
                 </div>
 
                 <div class="links" v-if="currentUserType == 'investigator'">
                     <router-link :to="{name: 'investigator-dashboard'}">Dashboard</router-link>
                     <router-link :to="{name: 'investigator-edit-profile'}">Profile</router-link>
-                    <router-link :to="{name: 'employee-help'}">Help</router-link>
+                    <router-link :to="{name: 'help'}">Help</router-link>
                 </div>
 
+
+                <div class="links" v-if="currentUserType == 'admin'">
+                    <router-link :to="{name: 'admin-dashboard'}">Dashboard</router-link>
+                    <router-link :to="{name: 'admin-statistics'}">Statistics</router-link>
+                    <router-link :to="{name: 'admin-investigators'}">Investigators</router-link>
+                    <router-link :to="{name: 'admin-archive'}">Archive</router-link>
+                    <router-link :to="{name: 'admin-profile'}">Profile</router-link>
+                    <router-link :to="{name: 'help'}">Help</router-link>
+                </div>
             </div>
         </div>
 
