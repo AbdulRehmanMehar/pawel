@@ -117,11 +117,16 @@ export default {
     padding-left: 35px;
 }
 
+.wrapper .sidebar .content a.router-link-exact-active {
+    margin-top: -27px;
+}
+
 .wrapper .sidebar .content a.active, .wrapper .sidebar .content a.router-link-exact-active {
     color: #2176D4;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     position: relative;
+    z-index: 0;
 }
 
 .wrapper .sidebar .content :not(.active):not(.router-link-exact-active) {
