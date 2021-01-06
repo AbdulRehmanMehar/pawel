@@ -43,6 +43,9 @@
             <li>
                 <router-link :to="{name: 'admin-investigators'}">Investigators</router-link>
             </li>
+            <li>
+                <router-link :to="{name: 'admin-investigator-details'}">Investigator Details</router-link>
+            </li>
         </ul>
     </div>
 </template>
