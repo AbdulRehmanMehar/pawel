@@ -13,7 +13,7 @@
 
                 <div class="links" v-if="currentUserType == 'investigator'">
                     <router-link :to="{name: 'investigator-dashboard'}">Dashboard</router-link>
-                    <router-link :to="{name: 'investigator-profile'}">Profile</router-link>
+                    <router-link :to="{name: 'investigator-edit-profile'}">Profile</router-link>
                     <router-link :to="{name: 'employee-help'}">Help</router-link>
                 </div>
 
