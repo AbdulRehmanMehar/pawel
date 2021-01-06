@@ -40,6 +40,9 @@
             <li>
                 <router-link :to="{name: 'admin-archive'}">Archive</router-link>
             </li>
+            <li>
+                <router-link :to="{name: 'admin-investigators'}">Investigators</router-link>
+            </li>
         </ul>
     </div>
 </template>
