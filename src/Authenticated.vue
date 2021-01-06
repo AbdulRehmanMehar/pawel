@@ -23,7 +23,7 @@
                     <router-link :to="{name: 'admin-statistics'}">Statistics</router-link>
                     <router-link :to="{name: 'admin-investigators'}">Investigators</router-link>
                     <router-link :to="{name: 'admin-archive'}">Archive</router-link>
-                    <router-link :to="{name: 'admin-profile'}">Profile</router-link>
+                    <!-- <router-link :to="{name: 'admin-profile'}">Profile</router-link> -->
                     <router-link :to="{name: 'help'}">Help</router-link>
                 </div>
             </div>
