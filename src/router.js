@@ -72,7 +72,11 @@ export default new VueRouter({
                     name: 'admin-investigators',
                     component: () => import('./components/admin/Investigators.vue')
                 },
-
+                {
+                    path: 'admin-investigator-details',
+                    name: 'admin-investigator-details',
+                    component: () => import('./components/admin/InvestigatorDetails.vue')
+                },
                 
             ]
         },
