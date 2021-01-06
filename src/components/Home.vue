@@ -37,6 +37,9 @@
             <li>
                 <router-link :to="{name: 'admin-statistics'}">Statistics</router-link>
             </li>
+            <li>
+                <router-link :to="{name: 'admin-archive'}">Archive</router-link>
+            </li>
         </ul>
     </div>
 </template>
