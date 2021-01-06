@@ -57,6 +57,11 @@ export default new VueRouter({
                     name: 'admin-dashboard',
                     component: () => import('./components/admin/Dashboard.vue')
                 },
+                {
+                    path: 'admin-statistics',
+                    name: 'admin-statistics',
+                    component: () => import('./components/admin/Statistics.vue')
+                },
             ]
         }
     ]
